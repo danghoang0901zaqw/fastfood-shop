@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_ID,
+  apiKey: "AIzaSyBsyp6e8Eyh-O_40CGjI4w4PliQt2eStfg",
+  authDomain: "food-app-e6f3c.firebaseapp.com",
+  projectId: "food-app-e6f3c",
+  storageBucket: "food-app-e6f3c.appspot.com",
+  messagingSenderId: "975114832720",
+  appId: "1:975114832720:web:418c5d1fb04b34de583a55",
 };
 
 const app = initializeApp(firebaseConfig);
