@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.blur-effect-theme {
+  @apply bg-white/50 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 opacity-100 z-[100] shadow-sm shadow-slate-100 transition-all duration-300;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.account-user {
+  position: relative;
+  height: 30px;
+}
+.account-user::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 150px;
+  height: 30px;
+}
+.options-user {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 130%; 
+  border-radius: 2px;
+  background: white;
+  z-index: 110;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.account-user:hover .options-user{
+  display: block;
+}
+input:invalid[focused="true"]{
+  border: 1px solid red;
+}
+label {
+  color: #777;
+}
+span {
+  color: red;
+  display: none;
+}
+input:invalid[focused="true"] ~ span {
+  display: block;
 }
