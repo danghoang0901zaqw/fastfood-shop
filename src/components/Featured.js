@@ -8,10 +8,12 @@ const Featured = () => {
         <p className="text-slate-700 text-5xl font-bold ">
           Just sit back at home
         </p>
-        <p className="text-slate-700 text-5xl font-bold">
-          we will{" "}
-          <span className="text-5xl font-bold text-orange-600">take care</span>
-        </p>
+       <div className="flex gap-2">
+          <p className="text-slate-700 text-5xl font-bold">
+            we will
+          </p>
+            <p className="text-5xl font-bold text-orange-600">take care</p>
+       </div>
         <p className="text-slate-900 font-light w-[8  00px]">
           Mặc dù đứng thứ hai về số lượng cửa hàng nhưng thương hiệu McDonald's
           lại đứng đầu ở mặt hàng bánh Hamburger ở 119 quốc gia khác nhau. Đây

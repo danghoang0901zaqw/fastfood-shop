@@ -18,7 +18,6 @@ const CartItem = ({ item }) => {
   const handleDecreaseItem = (item) => {
     dispatch(decreaseItem(item));
   };
-  console.log(item.color, item.size);
   return (
     <div className="w-full flex items-center justify-between px-5">
       <div className="flex items-center justify-center gap-4">

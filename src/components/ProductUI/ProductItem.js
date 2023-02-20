@@ -8,9 +8,9 @@ const ProductItem = ({ item, isBuy = true }) => {
   const handleGotoDetail = (prod) => {
     dispatch(set(prod));
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [item]);
+    useEffect(()=>{
+      !isBuy && window.scrollTo(0,0)
+    },[item])
   return (
     <>
       <div className="border border-bg-[#fde4e4] w-full p-[30px] min-h-[350px] h-full rounded shadow-lg">
@@ -25,7 +25,13 @@ const ProductItem = ({ item, isBuy = true }) => {
           </h5>
         </Link>
         <div className="flex items-center justify-between mt-4">
-          <p className="text-xl font-semibold text-orange-600">${item.price}</p>
+          <p
+            className={` font-semibold text-orange-600 ${
+              isBuy ? "text-xl" : "text-center w-full text-2xl"
+            }`}
+          >
+            ${item.price}
+          </p>
           {isBuy && (
             <button
               onClick={() => handleGotoDetail(item)}

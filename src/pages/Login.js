@@ -13,17 +13,34 @@ const Login = ({ title }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+  const [msgError, setmsgError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const res = await signInWithEmailAndPassword(auth, email, password);
-      dispatch(loginAccount(res.user));
-      navigate("/");
-      setError(false);
-    } catch (err) {
+    if (email === "" || password === "") {
       setError(true);
-      console.log(err.message);
+      setmsgError(
+        "Email bạn nhập không kết nối với tài khoản nào. Hãy tìm tài khoản của bạn và đăng nhập."
+      );
+    } else {
+      try {
+        const res = await signInWithEmailAndPassword(auth, email, password);
+        dispatch(loginAccount(res.user));
+        navigate("/");
+        setError(false);
+      } catch (err) {
+        setError(true);
+        setmsgError("Thông tin tài khoản hoặc mật khẩu không đúng");
+        console.log(err.message);
+      }
+    }
+  };
+  const handleSpaceCharater = (value, type) => {
+    if (value.startsWith(" ")) return;
+    if (type == "email") {
+      setEmail(value);
+    } else if (type === "password") {
+      setPassword(value);
     }
   };
   return (
@@ -76,11 +93,11 @@ const Login = ({ title }) => {
               </svg>
             </div>
           </div>
-          <form className="mt-5">
+          <form className="mt-5" onSubmit={handleSubmit}>
             <div className="w-full border border-slate-200 rounded mb-7">
               <input
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => handleSpaceCharater(e.target.value, "email")}
                 className="w-full h-full outline-none border-none p-3"
                 type="text"
                 placeholder="Email/Phone Number/User name"
@@ -89,13 +106,15 @@ const Login = ({ title }) => {
             <div className="w-full border border-slate-200 rounded mb-7">
               <input
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value, "password")}
                 className="w-full h-full outline-none border-none p-3"
                 type="password"
                 placeholder="Password"
               />
             </div>
-           {error && <p className="text-red-500 text-center mb-3">Thông tin tài khoản hoặc mật khẩu không đúng</p>}
+            {error && (
+              <p className="text-red-500 text-center mb-3">{msgError}</p>
+            )}
             <button
               onClick={handleSubmit}
               className="w-full bg-orange-600 p-2 rounded text-slate-100 "
@@ -125,7 +144,7 @@ const Login = ({ title }) => {
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSePQHKJGlrarKYj-1SD3MWgNCW68IX7gwr0w&usqp=CAU"
                 alt=""
-                className="w-5  h-5"
+                className="w-5 h-5"
               />
               Google
             </button>

@@ -57,7 +57,7 @@ const publicRoutes = [
     helmet:'Contact',
     path: config.routes.contact,
     element: Contact,
-    layout: null,
+    layout: DefaultLayout,
   },
 ];
 const privateRoutes = [];

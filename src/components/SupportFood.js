@@ -9,9 +9,14 @@ const SupportFood = () => {
         <img src={location} alt="" className="" />
       </div>
       <div className="p-10">
-        <h1 className="text-start font-semibold text-5xl text-slate-900">
-          Why <span className="text-orange-600">Tasty Treat ?</span>
-        </h1>
+        <div className="flex items-center justify-center gap-2">
+          <h1 className="text-start font-semibold text-5xl text-slate-900">
+            Why 
+          </h1>
+          <p className="font-semibold text-5xl text-orange-600">
+            Tasty Treat ?
+          </p>
+        </div>
         <p className="mt-6 text-slate-900 font-light">
           Pizza Hut Việt Nam - nơi bạn được thỏa sức thể hiện chính mình với cơ
           hội hấp dẫn để phát triển cá nhân lẫn nghề nghiệp toàn diện! Chúng tôi

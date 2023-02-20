@@ -67,9 +67,9 @@ const Header = ({ hide = false }) => {
         >
           <i className="text-2xl text-slate-900  bx bx-shopping-bag"></i>
           {cartProducts.length > 0 && (
-            <span className="absolute w-5 h-5 rounded-full bg-green-500 top-[30%] left-[50%] text-slate-100 text-sm flex items-center justify-center">
+            <p className="absolute w-5 h-5 rounded-full bg-green-500 top-[30%] left-[50%] text-slate-100 text-sm flex items-center justify-center">
               {totalAmount}
-            </span>
+            </p>
           )}
         </div>
         <div className={`cursor-pointer h-full flex items-center justify-center ${userID?.displayName?.length>=15 ? 'w-[200px]':'w-[140px]'}`}>

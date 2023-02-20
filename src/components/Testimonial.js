@@ -21,10 +21,11 @@ const Testimonial = () => {
       <div className="">
         <div>
           <h1 className="text-orange-500 text-2xl font-medium">Testimonial</h1>
-          <p className="text-4xl font-bold text-slate-800">
-            What our <span className="text-orange-600">customers </span>are
-            saying
-          </p>
+          <div className="flex items-center gap-2">
+            <p className="text-4xl font-bold text-slate-800">What our</p>
+            <p className="text-4xl font-bold text-orange-600">customers </p>
+            <p className="text-4xl font-bold text-slate-800">are saying </p>
+          </div>
           <p className="font-light text-slate-700 mt-3">
             Tết đến xuân sang, nhà nhà tụ tập cùng nhau tất bật chuẩn bị những
             mâm cỗ ngày Tết. Mâm cỗ năm nay thêm phần viên mãn với sự "góp mặt"
@@ -43,9 +44,9 @@ const Testimonial = () => {
                 <img
                   src={avatar01}
                   alt=""
-                  className="w-14 h-14 object-contain  rounded-full "
+                  className="w-14 h-14 object-cover rounded-full "
                 />
-                <span className="text-slate-900 font-semibold">Enzo Fernandez</span>
+                <p className="text-slate-900 font-semibold">Enzo Fernandez</p>
               </div>
             </div>
             <div>
@@ -60,9 +61,9 @@ const Testimonial = () => {
                 <img
                   src={avatar02}
                   alt=""
-                  className="w-14 h-14 object-contain  rounded-full "
+                  className="w-14 h-14 object-cover rounded-full "
                 />
-                <span className="text-slate-900 font-semibold">Marcel Sabitzer</span>
+                <p className="text-slate-900 font-semibold">Marcel Sabitzer</p>
               </div>
             </div>
             <div>
@@ -76,9 +77,9 @@ const Testimonial = () => {
                 <img
                   src={avatar02}
                   alt=""
-                  className="w-14 h-14 object-contain  rounded-full "
+                  className="w-14 h-14 object-cover rounded-full "
                 />
-                <span className="text-slate-900 font-semibold">Luiz Suarez</span>
+                <p className="text-slate-900 font-semibold">Luiz Suarez</p>
               </div>
             </div>
           </Slider>

@@ -46,9 +46,9 @@ const CartSidebar = () => {
             <p className="text-[18px] font-light flex gap-2">
               Your Cart
               {totalItems > 0 && (
-                <span className="bg-slate-900 rounded p-1 px-2 text-sm text-slate-100">
+                <p className="bg-slate-900 rounded p-1 px-2 text-sm text-slate-100">
                   {totalItems} ( items )
-                </span>
+                </p>
               )}
             </p>
           </div>

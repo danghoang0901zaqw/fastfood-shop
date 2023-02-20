@@ -7,11 +7,11 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <img src={logo} alt="" className="w-[20%] object-contain  " />
           <h5 className="text-xl font-semibold text-slate-900">Tasty Treat</h5>
-          <span className="font-light text-sm">
+          <p className="font-light text-sm">
             Giấy CN ĐKDN số: 0311828036 do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày
             11/6/2012 sửa đổi lần thứ 23, ngày 10/12/2020 Chịu trách nhiệm quản
             lý nội dung: Trần Đăng Hoàng
-          </span>
+          </p>
         </div>
         <div className="flex flex-col gap-3">
           <h5 className="text-xl font-semibold text-slate-900">
@@ -19,18 +19,18 @@ const Footer = () => {
           </h5>
           <div className="">
             <p className="text-slate-900 font-medium">Sunday - Thursday</p>
-            <span className="font-light text-sm">10:00am - 11:00pm</span>
+            <p className="font-light text-sm">10:00am - 11:00pm</p>
           </div>
           <div>
             <p className="text-slate-900 font-medium">Friday - Saturday</p>
-            <span className="font-light text-sm">Off day</span>
+            <p className="font-light text-sm">Off day</p>
           </div>
         </div>
         <div className="flex flex-col gap-3">
           <h5 className="text-xl font-semibold text-slate-900">Contact</h5>
-          <span className="font-light text-sm">
+          <p className="font-light text-sm">
             Location: BH City, Nguyễn Hoàng 31/4, Việt Nam
-          </span>
+          </p>
           <p className="text-slate-900 font-medium">Phone: 0348240175</p>
           <p className="text-slate-900 font-medium">
             Email: danghoang0901zaqw@gmail.com

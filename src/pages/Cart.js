@@ -22,7 +22,7 @@ const Cart = ({ title }) => {
       )
     );
   }, [cartProducts]);
-  console.log(totalPrice)
+  console.log(totalPrice);
   return (
     <div className="px-10 ">
       <div className="flex items-center justify-center gap-3 py-5">
@@ -46,17 +46,19 @@ const Cart = ({ title }) => {
           </div>
           {cartProducts.length > 0 && (
             <>
-              <div className="mt-5 px-5 flex items-center justify-between">
-                <p className="text-2xl font-semibold">
-                  <span>{totalProducts}</span> Items
-                </p>
-                <p className="text-2xl font-semibold">
-                  Total: <span>${formatNumber(totalPrice)}</span>
-                </p>
+              <div className="mt-2 px-5 flex items-center justify-between">
+               <div className="flex items-center">
+                  <p className="text-2xl font-semibold"></p>
+                  <p className="text-2xl font-semibold">{totalProducts} Items</p> 
+               </div>
+                <div className="flex items-center gap-2">
+                  <p className="text-2xl font-semibold">Total:</p>
+                  <p className="text-2xl font-semibold">${formatNumber(totalPrice)}</p>
+                </div>
               </div>
               <Link
                 to="/products"
-                className="mt-4 bg-gradient-to-b from-amber-500 to-orange-600 p-2 w-full max-w-[250px] rounded font-semnibold text-xl flex items-center justify-center gap-3 text-slate-100 font-medium"
+                className="mt-2 bg-gradient-to-b from-amber-500 to-orange-600 p-2 w-full max-w-[250px] rounded font-semnibold text-xl flex items-center justify-center gap-3 text-slate-100 font-medium"
               >
                 <i className="text-2xl bx bx-cart"></i>
                 Continue Shopping
@@ -115,7 +117,7 @@ const Cart = ({ title }) => {
               from free shipping
             </p>
           </div>
-          <Link to={`${userID==null ? '/login':'/checkout'}`}>
+          <Link to={`${userID == null ? "/login" : "/checkout"}`}>
             <button className="mt-4 bg-gradient-to-b from-amber-500 to-orange-600 p-2 w-full rounded font-semnibold text-xl flex items-center justify-center gap-3 text-slate-100 font-medium acive:scale-105 transition-all duration-150">
               <i className="text-xl bx bx-lock-alt"></i>
               Checkout

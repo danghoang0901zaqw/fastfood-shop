@@ -44,11 +44,12 @@ const ProductCard = ({ product, isShowModal = false }) => {
       toast.success("Add Item successfully");
     }
   };
-  console.log(color,size)
   return (
     <div
       className={`py-[50px] ${
-        isShowModal ? "px-10 bg-white h-[60vh] overflow-y-scroll rounded translate-y-[-0%]" : ""
+        isShowModal
+          ? "px-10 bg-white h-[60vh] overflow-y-scroll rounded translate-y-[-0%]"
+          : ""
       }`}
     >
       <ToastContainer position="top-right" autoClose={2000} theme="light" />
@@ -109,12 +110,12 @@ const ProductCard = ({ product, isShowModal = false }) => {
             {product?.title}
           </h5>
           <div className="mt-5">
-            <p className="flex items-center justify-start gap-4 text-orange-500 ">
-              Price:
-              <span className="text-orange-600 font-bold text-xl">
+            <div className="flex items-center justify-start gap-5 ">
+              <p className="flex items-center justify-start gap-4 ">Price:</p>
+              <p className="text-orange-600 font-bold text-xl">
                 ${product?.price}
-              </span>
-            </p>
+              </p>
+            </div>
             <div className="flex items-center justify-start gap-4">
               <p>Category:</p>
               <div className="bg-orange-200 capitalize px-3 py-2 rounded">

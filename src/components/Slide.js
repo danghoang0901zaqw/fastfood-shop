@@ -9,12 +9,14 @@ const Slide = () => {
         <h1 className="text-xl font-semibold text-slate-600">
           Easy way to make an order
         </h1>
-        <p className="text-orange-600 font-bold text-5xl mt-5">
-          HUNGRY? <span className="text-slate-700">Just wait </span>
-        </p>
-        <p className="text-slate-700 font-bold text-5xl mt-5">
-          food at <span className="text-orange-600">your door</span>
-        </p>
+        <div className="flex items-center mt-5 gap-2">
+          <p className=" text-orange-600 font-bold text-5xl">HUNGRY?{" "}</p>
+          <p className="font-bold text-5xl text-slate-700">Just wait </p>
+        </div>
+        <div className="flex items-center mt-5 gap-2">
+          <p className="text-slate-700 font-bold text-5xl">food at{" "} </p>
+          <p className="font-bold text-5xl text-orange-600">your door</p>
+        </div>
         <p className="mt-5 text-slate-500 font-light  ">
           Combo ĐÔI BẠN CÙNG CHIẾN với chỉ 359K - gồm 01 bánh Pizza Lẩu Hải Sản
           Viền Thanh Cua (cỡ vừa), 01 Cánh Gà Nướng BBQ (4 miếng), dùng kèm 02
