@@ -8,4 +8,4 @@ const routes={
   checkout:'/checkout',
   contact:'/contact'
 }
-export default routes
+export default routes 

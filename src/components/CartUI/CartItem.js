@@ -33,10 +33,6 @@ const CartItem = ({ item }) => {
               {item.description}
             </p>
             <div className="flex items-center justify-start gap-3 ">
-              <p className="text-md font-normal text-slate-800">Color:</p>
-              <p className="font-bold capitalize">{item.color}</p>
-            </div>
-            <div className="flex items-center justify-start gap-3 ">
               <p className="text-md font-normal text-slate-800  ">Size:</p>
               <p className="font-bold uppercase">{item.size}</p>
             </div>

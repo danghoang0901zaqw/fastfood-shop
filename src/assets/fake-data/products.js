@@ -74,7 +74,6 @@ const products = [
     image02: burger_01,
     image03: burger_03,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "white", "blue", "green", "yellow"],
     description:
       "Thịt bò xay ướp sẵn & định hình thành miếng burger patty vừa ăn. Từ 3 miếng nay thành 4 miếng - Vừa ngon miệng lại vừa tiết kiệm. Sản phẩm an toàn & tiện lợi vì được đóng gói trong vỉ (hút chân không, với 2 lớp màng bảo vệ) và được bảo quản mát ở nhiệt độ từ 0-4 độ C. Chỉ cần mở bao bì là chế biến ngay. Hướng dẫn: Chiên áp chảo từng mặt hamburger đến khi vàng đều là đã ra miếng burger thơm phức. Ăn kèm với với bánh mì tròn burger (hoặc bánh mì sandwich), thêm mayonnaise, salad, cà chua, phô mai lát, tương ớt & tương cà.",
 
@@ -123,7 +122,6 @@ const products = [
     image02: pizza_10,
     image03: pizza_12,
     size: ["s", "m", "l"],
-    colors: ["black", "yellow", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -170,7 +168,6 @@ const products = [
     image02: pizza_02,
     image03: pizza_05,
     size: ["l", "xl"],
-    colors: ["black", "white"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -217,7 +214,6 @@ const products = [
     image02: pizza_17,
     image03: pizza_19,
     size: ["xl", "2xl"],
-    colors: ["black", "yellow"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -263,7 +259,6 @@ const products = [
     image02: burger_09,
     image03: burger_11,
     size: ["s"],
-    colors: ["pink", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -309,8 +304,7 @@ const products = [
     image02: burger_12,
     image03: burger_08,
     size: ["xl"],
-    colors: ["black", "blue", "red", "orange"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+    description: "Bánh Pizza còn được người Việt Nam phát âm một cách quen thuộc là “bánh bi da”, là một loại bánh có hình tròn dẹt nổi tiếng khắp nơi trên thế giới. Nguyên liệu chính để tạo nên một chiếc bánh pizza là bột mỳ, nước và nấm lên men được ủ ít nhất 1 ngày. Bánh pizza được tạo nên từ việc nhào nặn bột mỳ thành hình tròn dẹt rồi đem nướng chín trong lò.",
     review: [
       {
         id: 1,
@@ -356,8 +350,7 @@ const products = [
     image02: pizza_06,
     image03: pizza_18,
     size: ["s", "m", "2xl"],
-    colors: ["yellow", "pink"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+    description: "Bánh Pizza còn được người Việt Nam phát âm một cách quen thuộc là “bánh bi da”, là một loại bánh có hình tròn dẹt nổi tiếng khắp nơi trên thế giới. Nguyên liệu chính để tạo nên một chiếc bánh pizza là bột mỳ, nước và nấm lên men được ủ ít nhất 1 ngày. Bánh pizza được tạo nên từ việc nhào nặn bột mỳ thành hình tròn dẹt rồi đem nướng chín trong lò.",
     review: [
       {
         id: 1,
@@ -403,8 +396,7 @@ const products = [
     image02: pizza_09,
     image03: pizza_13,
     size: ["s", "2xl"],
-    colors: ["green"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+    description: "Bánh Pizza còn được người Việt Nam phát âm một cách quen thuộc là “bánh bi da”, là một loại bánh có hình tròn dẹt nổi tiếng khắp nơi trên thế giới. Nguyên liệu chính để tạo nên một chiếc bánh pizza là bột mỳ, nước và nấm lên men được ủ ít nhất 1 ngày. Bánh pizza được tạo nên từ việc nhào nặn bột mỳ thành hình tròn dẹt rồi đem nướng chín trong lò.",
     review: [
       {
         id: 1,
@@ -450,8 +442,7 @@ const products = [
     image02: pizza_18,
     image03: pizza_11,
     size: ["m", "l"],
-    colors: ["black"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+    description: "Bánh Pizza còn được người Việt Nam phát âm một cách quen thuộc là “bánh bi da”, là một loại bánh có hình tròn dẹt nổi tiếng khắp nơi trên thế giới. Nguyên liệu chính để tạo nên một chiếc bánh pizza là bột mỳ, nước và nấm lên men được ủ ít nhất 1 ngày. Bánh pizza được tạo nên từ việc nhào nặn bột mỳ thành hình tròn dẹt rồi đem nướng chín trong lò.",
     review: [
       {
         id: 1,
@@ -497,8 +488,7 @@ const products = [
     image02: burger_04,
     image03: burger_10,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+    description: "Bánh Pizza còn được người Việt Nam phát âm một cách quen thuộc là “bánh bi da”, là một loại bánh có hình tròn dẹt nổi tiếng khắp nơi trên thế giới. Nguyên liệu chính để tạo nên một chiếc bánh pizza là bột mỳ, nước và nấm lên men được ủ ít nhất 1 ngày. Bánh pizza được tạo nên từ việc nhào nặn bột mỳ thành hình tròn dẹt rồi đem nướng chín trong lò.",
     review: [
       {
         id: 1,
@@ -544,8 +534,7 @@ const products = [
     image02: bread_02,
     image03: bread_03,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["blue", "orange"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+    description: "Bánh Pizza còn được người Việt Nam phát âm một cách quen thuộc là “bánh bi da”, là một loại bánh có hình tròn dẹt nổi tiếng khắp nơi trên thế giới. Nguyên liệu chính để tạo nên một chiếc bánh pizza là bột mỳ, nước và nấm lên men được ủ ít nhất 1 ngày. Bánh pizza được tạo nên từ việc nhào nặn bột mỳ thành hình tròn dẹt rồi đem nướng chín trong lò.",
     review: [
       {
         id: 1,
@@ -591,7 +580,6 @@ const products = [
     image02: bread_05,
     image03: bread_06,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "pink", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -638,7 +626,6 @@ const products = [
     image02: bread_08,
     image03: bread_09,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -684,7 +671,6 @@ const products = [
     image02: bread_02,
     image03: burger_04,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["blue", "green", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -730,7 +716,6 @@ const products = [
     image02: bread_07,
     image03: bread_06,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "yellow", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -776,7 +761,6 @@ const products = [
     image02: bread_04,
     image03: bread_06,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["green", "yellow", "red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -822,7 +806,6 @@ const products = [
     image02: bread_05,
     image03: bread_01,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -868,7 +851,6 @@ const products = [
     image02: hotdog_02,
     image03: hotdog_03,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "blue", "yellow"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -914,7 +896,6 @@ const products = [
     image02: hotdog_05,
     image03: hotdog_06,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "green", "yellow", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -960,7 +941,6 @@ const products = [
     image02: hotdog_08,
     image03: hotdog_04,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white", "green", "pink", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1006,7 +986,6 @@ const products = [
     image02: hotdog_02,
     image03: hotdog_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1052,7 +1031,6 @@ const products = [
     image02: hotdog_07,
     image03: hotdog_06,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1098,7 +1076,6 @@ const products = [
     image02: hotdog_01,
     image03: hotdog_04,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "blue"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1144,7 +1121,6 @@ const products = [
     image02: hotdog_08,
     image03: hotdog_03,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white", "yellow"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1190,7 +1166,6 @@ const products = [
     image02: hotdog_02,
     image03: hotdog_05,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["blue", "green"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1236,7 +1211,6 @@ const products = [
     image02: hotdog_08,
     image03: hotdog_01,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white", "blue", "red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1282,7 +1256,6 @@ const products = [
     image02: hotdog_02,
     image03: hotdog_03,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["blue", "green", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1328,7 +1301,6 @@ const products = [
     image02: hotdog_06,
     image03: hotdog_01,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "blue", "red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1374,7 +1346,6 @@ const products = [
     image02: sandwich_02,
     image03: sandwich_03,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "blue"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1420,7 +1391,6 @@ const products = [
     image02: burger_09,
     image03: burger_11,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "blue", "green"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1466,7 +1436,6 @@ const products = [
     image02: sandwich_02,
     image03: sandwich_04,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1512,7 +1481,6 @@ const products = [
     image02: sandwich_08,
     image03: sandwich_10,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["green", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1558,7 +1526,6 @@ const products = [
     image02: sandwich_07,
     image03: sandwich_02,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "white", "blue", "green"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1604,7 +1571,6 @@ const products = [
     image02: sandwich_03,
     image03: sandwich_07,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white", "pink", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1650,7 +1616,6 @@ const products = [
     image02: sandwich_05,
     image03: sandwich_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "white", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1696,7 +1661,6 @@ const products = [
     image02: sandwich_04,
     image03: sandwich_05,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "blue", "green", "yellow", "red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1742,7 +1706,6 @@ const products = [
     image02: sandwich_02,
     image03: sandwich_04,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1788,7 +1751,6 @@ const products = [
     image02: sandwich_08,
     image03: sandwich_10,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "green", "yellow"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1834,7 +1796,6 @@ const products = [
     image02: sandwich_07,
     image03: sandwich_09,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1880,7 +1841,6 @@ const products = [
     image02: sandwich_03,
     image03: sandwich_04,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["yellow", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1926,7 +1886,6 @@ const products = [
     image02: pizza_05,
     image03: pizza_12,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "white", "yellow", "pink", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -1972,7 +1931,6 @@ const products = [
     image02: pizza_09,
     image03: pizza_17,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2018,7 +1976,6 @@ const products = [
     image02: pizza_15,
     image03: pizza_03,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["blue"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2064,7 +2021,6 @@ const products = [
     image02: pizza_11,
     image03: pizza_02,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["blue", "green"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2110,7 +2066,6 @@ const products = [
     image02: pizza_14,
     image03: pizza_12,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2156,7 +2111,6 @@ const products = [
     image02: pizza_17,
     image03: pizza_02,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["yellow"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2202,16 +2156,6 @@ const products = [
     image02: burger_12,
     image03: burger_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: [
-      "black",
-      "white",
-      "blue",
-      "green",
-      "yellow",
-      "pink",
-      "red",
-      "orange",
-    ],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2257,7 +2201,6 @@ const products = [
     image02: burger_12,
     image03: burger_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["red", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2303,7 +2246,6 @@ const products = [
     image02: burger_12,
     image03: burger_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "yellow", "pink"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2349,7 +2291,6 @@ const products = [
     image02: burger_12,
     image03: burger_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["white", "blue", "green", "pink"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2395,7 +2336,6 @@ const products = [
     image02: burger_12,
     image03: burger_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["pink", "red"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {
@@ -2441,7 +2381,6 @@ const products = [
     image02: burger_12,
     image03: burger_08,
     size: ["s", "m", "l", "xl", "2xl"],
-    colors: ["black", "pink", "orange"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
     review: [
       {

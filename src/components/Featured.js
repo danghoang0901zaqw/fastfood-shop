@@ -22,11 +22,11 @@ const Featured = () => {
           nước khác (trong đó có 5.942 cửa hàng ở các thị trường mới nổi).
         </p>
       </div>
-      <div className="grid grid-cols-3 items-center justify-items-center mt-20 gap-20">
+      <div className="grid grid-cols-3 justify-items-center mt-20 gap-20">
         {featured.map((item, index) => (
           <div className="" key={index}>
-            <img src={item.img} alt="" />
-            <h5 className="text-2xl font-bold text-slate-900">{item.title}</h5>
+            <img src={item.img} alt="" className="w-[154px] h-[154px] object-cover m-auto" />
+            <h5 className="text-2xl font-bold text-slate-900 text-center">{item.title}</h5>
             <p className="text-slate-900 font-light mt-3">{item.desc}</p>
           </div>      
         ))}

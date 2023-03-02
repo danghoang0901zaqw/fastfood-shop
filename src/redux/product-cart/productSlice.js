@@ -22,7 +22,6 @@ const productSlice = createSlice({
       const indexExist = state.cartProducts.findIndex((x) => {
         return (
           x.id === newItem.id &&
-          x.color === newItem.color &&
           x.size === newItem.size
         );
       });
@@ -42,7 +41,6 @@ const productSlice = createSlice({
       state.cartProducts = state.cartProducts.filter((x) => {
         return (
           x.id !== deleteItem.id ||
-          x.color !== deleteItem.color ||
           x.size !== deleteItem.size
         );
       });
@@ -53,7 +51,6 @@ const productSlice = createSlice({
       const indexItem = state.cartProducts.findIndex((x) => {
         return (
           x.id === increaseItem.id &&
-          x.color === increaseItem.color &&
           x.size === increaseItem.size
         );
       });
@@ -66,7 +63,6 @@ const productSlice = createSlice({
       const indexItem = state.cartProducts.findIndex((x) => {
         return (
           x.id === decreaseItem.id &&
-          x.color === decreaseItem.color &&
           x.size === decreaseItem.size
         );
       });

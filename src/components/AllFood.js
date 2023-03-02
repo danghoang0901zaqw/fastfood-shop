@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { categories, colors, sizes } from "../assets/fake-data/filter";
+import { categories, sizes } from "../assets/fake-data/filter";
 import productData from "../assets/fake-data/products";
 import ProductItem from "../components/ProductUI/ProductItem";
 import { useDebounce } from "../hooks";
@@ -83,7 +83,6 @@ const AllFoods = () => {
   const initFilter = {
     category: [],
     size: [],
-    color: [],
   };
   const [filter, setFilter] = useState(initFilter);
 
@@ -101,12 +100,6 @@ const AllFoods = () => {
           setFilter({
             ...filter,
             size: [...filter.size, item.size],
-          });
-          break;
-        case "COLOR":
-          setFilter({
-            ...filter,
-            color: [...filter.color, item.color],
           });
           break;
         default:
@@ -127,10 +120,6 @@ const AllFoods = () => {
           const newSize = filter.size.filter((x) => x !== item.size);
           setFilter({ ...filter, size: newSize });
           break;
-        case "COLOR":
-          const newColor = filter.color.filter((x) => x !== item.color);
-          setFilter({ ...filter, color: newColor });
-          break;
         default:
           throw new Error("value is not invalid");
       }
@@ -140,12 +129,6 @@ const AllFoods = () => {
     let temp = products;
     if (filter.category.length > 0) {
       temp = temp.filter((x) => filter.category.includes(x.category));
-    }
-    if (filter.color.length > 0) {
-      temp = temp.filter((x) => {
-        const check = x.colors.find((x) => filter.color.includes(x));
-        return check !== undefined;
-      });
     }
     if (filter.size.length > 0) {
       temp = temp.filter((x) => {
@@ -221,24 +204,6 @@ const AllFoods = () => {
                     handleFilterSelect("SIZE", e.target.checked, item)
                   }
                   checked={filter.size.includes(item.size)}
-                />
-                {item.displayName}
-              </div>
-            ))}
-          </div>
-          <div className="mb-5">
-            <h1 className="font-bold text-slate-900 text-xl mb-2">Color</h1>
-            {colors.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-start gap-3"
-              >
-                <input
-                  type="checkbox"
-                  onChange={(e) =>
-                    handleFilterSelect("COLOR", e.target.checked, item)
-                  }
-                  checked={filter.color.includes(item.color)}
                 />
                 {item.displayName}
               </div>

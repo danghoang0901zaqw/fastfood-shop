@@ -10,17 +10,11 @@ const ProductCard = ({ product, isShowModal = false }) => {
   const [showMore, setShowMore] = useState(false);
   const tabs = ["Description", "Review"];
   const [tab, setTab] = useState("Description");
-  const [color, setColor] = useState(undefined);
   const [size, setSize] = useState(undefined);
-  useEffect(() => {}, [tab]);
   const truncate = (str) => {
     return str?.length > 200 ? str.slice(0, 200) + " ..." : str;
   };
   const checkChooseOptions = () => {
-    if (color === undefined) {
-      toast.error("You need choose a color for product");
-      return false;
-    }
     if (size === undefined) {
       toast.error("You need choose a size for product");
       return false;
@@ -37,7 +31,6 @@ const ProductCard = ({ product, isShowModal = false }) => {
           description: item.description,
           price: item.price,
           quantity: 1,
-          color: color,
           size: size,
         })
       );
@@ -52,10 +45,10 @@ const ProductCard = ({ product, isShowModal = false }) => {
           : ""
       }`}
     >
-      <ToastContainer position="top-right" autoClose={2000} theme="light" />
+      <ToastContainer position="top-right" autoClose={1000} theme="light" />
       <ToastContainer />
       <div className="flex gap-10">
-        <div className="flex flex-[1] flex-col   w-full  gap-10">
+        <div className="flex flex-[1] flex-col w-full gap-10">
           <div className="flex gap-10 ">
             <div className="flex gap-4 flex-col">
               <img
@@ -121,28 +114,6 @@ const ProductCard = ({ product, isShowModal = false }) => {
               <div className="bg-orange-200 capitalize px-3 py-2 rounded">
                 {product?.category}
               </div>
-            </div>
-            <div className="flex items-center gap-5 mt-4 ">
-              <p>Color:</p>
-              {product?.colors?.map((item, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center justify-center  border-[2px]  w-12 h-12 p-0.5 rounded-full cursor-pointer ${
-                    color === item ? "border-blue-600" : "border-[#8d8d8d]"
-                  }`}
-                >
-                  <div
-                    onClick={() => setColor(item)}
-                    className={`flex items-center justify-center w-full h-full rounded-full ${
-                      item === "black"
-                        ? "bg-black"
-                        : item === "white"
-                        ? "bg-white"
-                        : `bg-${item}-500`
-                    }`}
-                  ></div>
-                </div>
-              ))}
             </div>
             <div className="flex items-center gap-5 mt-4 ">
               <p>Size:</p>
